@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    td:not(:first-child) {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- your HTML code here 👇 -->
+  <h1>Jelly of the Month Club</h1>
+  <h2>Make all your friends jelly of your stock of jelly!</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sequi voluptatibus unde possimus, veritatis voluptas ipsam inventore architecto quia minus, laborum iusto dolor impedit ut velit. Assumenda, perspiciatis! Possimus, eligendi?</p>
+  <table>
+
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Basic Plan</th>
+        <th scope="col">Deluxe Plan</th>
+        <th scope="col">Jelly Giant Plan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Three new curated jellies per month</td>
+        <td>&check;</td>
+        <td>&check;</td>
+        <td>&check;</td>
+      </tr>
+      <tr>
+        <td>Monthly jellies come with commemorative mason jars</td>
+        <td></td>
+        <td>&check;</td>
+        <td>&check;</td>
+      </tr>
+      <tr>
+        <td>Free bonus jar of preserves bi-monthly</td>
+        <td></td>
+        <td>&check;</td>
+        <td>&check;</td>
+      </tr>
+      <tr>
+        <td>Free yearly tickets to Jelly Con</td>
+        <td></td>
+        <td></td>
+        <td>&check;</td>
+      </tr>
+      <tr>
+        <td>Monthly Pricing</td>
+        <td>$30</td>
+        <td>$50</td>
+        <td>$60</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Like what you see? Become a part of the JOTMC family today!</p>
+  <div>
+    <form action="index.html">
+      <div class="your-name">
+        <label for="name"></label>
+        <input type="text" name="your-name" id="name" placeholder="Your Name">
+
+        <label for="plan"></label>
+        <select name="plan">
+          <option value="Select" id="plan">Select Your Plan</option>
+        </select>
+
+        <label for="submit"></label>
+        <input type="submit" name="submit" value="Submit" />
+      </div>
+  </div>
+  </form>
+</body>
+</html>
