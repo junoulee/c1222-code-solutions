@@ -1,0 +1,21 @@
+#button {
+  width: 200px;
+  height: 70px;
+}
+
+#button:hover {
+  width: 200px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#category {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
