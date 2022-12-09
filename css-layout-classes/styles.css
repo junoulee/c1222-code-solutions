@@ -39,6 +39,5 @@ img {
 }
 
 .column-one-fourth {
-  display: flex;
   flex-basis: calc(100% / 4);
 }
