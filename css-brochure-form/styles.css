@@ -1,8 +1,11 @@
-h3 {
-  text-align: center;
+body {
   font-family: "Brandon Grotesque", sans-serif;
   font-style: normal;
   src: url("BrandonGrotesque-Medium.woff2") format("woff2");
+}
+
+h3 {
+  text-align: center;
   font-weight: 500;
   font-size: 1.2rem;
   color: rgb(255 51 0 / 78.3%);
@@ -36,16 +39,11 @@ button {
   border-color: rgb(255 123 0 / 78.3%);
   border-style: solid;
   color: white;
-  font-family: "Brandon Grotesque", sans-serif;
-  font-style: normal;
-  src: url("BrandonGrotesque-Medium.woff2") format("woff2");
   font-weight: 500;
   font-size: 0.9rem;
 }
 
 label {
-  font-family: "Brandon Grotesque", sans-serif;
-  font-style: normal;
   font-weight: 525;
   font-size: 0.8rem;
   margin-left: 2%;
@@ -56,10 +54,8 @@ input#name::placeholder,
 input#hiring::placeholder {
   padding-left: 1.5%;
   color: rgb(169 167 167);
-  font-family: "Brandon Grotesque", sans-serif;
   font-style: normal;
   font-weight: normal;
-  src: url("BrandonGrotesque-Medium.woff2") format("woff2");
   font-size: 1rem;
 }
 
