@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.column-full {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column-half {
+  flex-basis: calc(100% / 2);
+}
