@@ -2,6 +2,52 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Karla, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2") format("woff2");
+  unicode-range:
+    u+0000-00ff,
+    u+0131,
+    u+0152-0153,
+    u+02bb-02bc,
+    u+02c6,
+    u+02da,
+    u+02dc,
+    u+2000-206f,
+    u+2074,
+    u+20ac,
+    u+2122,
+    u+2191,
+    u+2193,
+    u+2212,
+    u+2215,
+    u+feff,
+    u+fffd;
+}
+
+h1 {
+  font-weight: 1000;
+  letter-spacing: 0.2rem;
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 13px;
+  width: 80%;
+}
+
+p {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+img {
+  width: 90px;
+  height: 90px;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -11,12 +57,40 @@
 .column-full {
   text-align: center;
   flex-basis: 100%;
+  padding: 5% 13%;
 }
 
 .row {
   display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .column-half {
   flex-basis: calc(100% / 2);
+  width: 500px;
+}
+
+.column-half-row {
+  width: 100%;
+  padding-right: 35px;
+}
+
+form {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+input {
+  height: 30px;
+  width: 140px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  background-color: white;
+  border: 1.5px;
+  border-style: solid;
+  border-color: rgb(255 47 0 / 99%);
+  color: rgb(255 47 0 / 99%);
+  font-weight: 700;
 }
