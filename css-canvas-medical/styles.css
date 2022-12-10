@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+  height: 100px;
+  padding-top: 40px;
+  background-color: rgb(247 245 245);
+}
+
+a {
+  padding-left: 5%;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("Avenir.woff2") format("woff2");
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.column-half {
+  flex-basis: calc(100% / 2);
+  align-items: center;
+}
+
+.column-quarter {
+  flex-basis: calc(100% / 4);
+}
+
+.dark-gray {
+  background-color: rgb(86 84 84);
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("Avenir.woff2") format("woff2");
+  line-height: 100%;
+  height: 100%;
+  padding-top: 75px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.dark-gray-info {
+  background-color: rgb(86 84 84);
+  color: white;
+  height: 100%;
+  padding: 70px;
+  line-height: 60%;
+  font-family: Avenir, sans-serif;
+  src: url("Avenir.woff2") format("woff2");
+  font-size: 10px;
+}
+
+.title {
+  padding-bottom: 30px;
+  font-size: 2rem;
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src: url("TiemposHeadline-Regular.woff2") format("woff2");
+}
+
+.schedule {
+  font-family: Avenir, sans-serif;
+  src: url("Avenir.woff2") format("woff2");
+  font-size: 11px;
+}
+
+h4 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  src: url("TiemposHeadline-LightItalic.woff2") format("woff2");
+}
+
+.half-ready {
+  padding-left: 20%;
+  color: rgb(108 108 108);
+  line-height: 20%;
+  padding-bottom: 20px;
+  border-top: 1px solid;
+  border-color: rgb(233 225 225);
+}
+
+.half-getstarted {
+  padding-top: 25px;
+  border-top: 1px solid;
+  border-color: rgb(233 225 225);
+  width: auto;
+  justify-content: flex-end;
+  text-align: end;
+  padding-right: 20%;
+}
+
+#get-button {
+  color: rgb(243 235 235);
+  padding: 10px 25px;
+  border: none;
+  background-color: rgb(8 3 102 / 99.7%);
+}
+
+.column-half-list {
+  font-family: Avenir, sans-serif;
+  src: url("Avenir.woff2") format("woff2");
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgb(157 154 154);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.column-half-list-left {
+  padding: 50px 10px 50px 100px;
+}
+
+.column-half-list-right {
+  padding: 50px 100px 50px 10px;
+}
+
+.clinicians-prefer {
+  text-align: center;
+  background-color: white;
+  margin-top: -40px;
+  padding-top: 50px;
+  border: none;
+  color: rgb(108 108 108);
+}
+
+.clinicians-detail {
+  font-family: Avenir, sans-serif;
+  src: url("Avenir.woff2") format("woff2");
+  font-size: 11px;
+  text-align: center;
+  padding-left: 225px;
+  padding-right: 225px;
+  margin-top: -15px;
+  line-height: 18px;
+  font-weight: 500;
+}
