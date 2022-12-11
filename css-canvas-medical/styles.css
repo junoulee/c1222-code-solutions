@@ -23,7 +23,7 @@
 }
 
 a {
-  padding-left: 5%;
+  padding-left: 2.5%;
   font-family: Avenir, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -161,19 +161,22 @@ h4 {
 }
 
 .column-top-right {
-  margin-left: -50px;
+  margin-left: -60px;
   padding-right: 5px;
   padding-top: 20px;
   border-bottom: 1px solid;
   border-color: rgb(233 225 225);
   padding-bottom: 10px;
+  height: 100%;
 }
 
 .column-top-left {
   padding-top: 20px;
   border-bottom: 1px solid;
   border-color: rgb(233 225 225);
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  padding-left: 80px;
+  height: 100%;
 }
 
 #contact-button {
