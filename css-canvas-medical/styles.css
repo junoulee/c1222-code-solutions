@@ -18,6 +18,10 @@
   background-color: rgb(247 245 245);
 }
 
+.footer-link {
+  padding-left: 40px;
+}
+
 a {
   padding-left: 5%;
   font-family: Avenir, sans-serif;
@@ -105,11 +109,13 @@ h4 {
   padding-right: 20%;
 }
 
-#get-button {
-  color: rgb(243 235 235);
+#get-button1,
+#get-button2 {
+  color: rgb(243 235 235 / 97.3%);
   padding: 10px 25px;
   border: none;
-  background-color: rgb(8 3 102 / 99.7%);
+  background-color: rgb(46 41 134);
+  cursor: pointer;
 }
 
 .column-half-list {
@@ -125,19 +131,21 @@ h4 {
 
 .column-half-list-left {
   padding: 50px 10px 50px 100px;
+  background-color: rgb(247 245 245);
 }
 
 .column-half-list-right {
   padding: 50px 100px 50px 10px;
+  background-color: rgb(247 245 245);
 }
 
 .clinicians-prefer {
   text-align: center;
-  background-color: white;
   margin-top: -40px;
-  padding-top: 50px;
+  padding-top: 30px;
   border: none;
   color: rgb(108 108 108);
+  background-color: rgb(247 245 245);
 }
 
 .clinicians-detail {
@@ -147,7 +155,99 @@ h4 {
   text-align: center;
   padding-left: 225px;
   padding-right: 225px;
-  margin-top: -15px;
+  margin-top: -10px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.column-top-right {
+  margin-left: -50px;
+  padding-right: 5px;
+  padding-top: 20px;
+  border-bottom: 1px solid;
+  border-color: rgb(233 225 225);
+  padding-bottom: 10px;
+}
+
+.column-top-left {
+  padding-top: 20px;
+  border-bottom: 1px solid;
+  border-color: rgb(233 225 225);
+  padding-bottom: 20px;
+}
+
+#contact-button {
+  border: none;
+  color: rgb(243 235 235 / 97.3%);
+  background-color: rgb(46 41 134);
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#logo {
+  width: 30%;
+}
+
+.white-logo {
+  width: 35%;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+#hero {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-text {
+  position: absolute;
+  color: white;
+  width: 35.5%;
+  left: 7.5em;
+  top: 5em;
+  font-weight: 500;
+}
+
+.column-full-image {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding-top: 50px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+#long-text {
+  font-family:
+    Avenir,
+    sans-serif;
+  src: url("Avenir.woff2") format("woff2");
+  font-size: 11px;
+  line-height: 18px;
+}
+
+h1 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  src: url("TiemposHeadline-LightItalic.woff2") format("woff2");
+}
+
+.overlay {
+  position: absolute;
+  background:
+    linear-gradient(
+      rgb(119 118 113 / 40%),
+      rgb(119 118 113 / 40%)
+    );
+  top: 50px;
+  bottom: 50px;
+  left: 79px;
+  right: 79px;
 }
