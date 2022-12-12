@@ -1,0 +1,35 @@
+.pokemon {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pokemon > img {
+  width: 150px;
+  position: relative;
+}
+
+#bulbasaur {
+  top: 2em;
+  right: 2em;
+}
+
+#charmander {
+  top: 2.9em;
+  right: 2em;
+}
+
+#squirtle {
+  top: 4em;
+  right: 2em;
+}
+
+#pikachu {
+  top: 8em;
+  right: 2em;
+}
+
+#jigglypuff {
+  top: 16em;
+  right: 2em;
+}
