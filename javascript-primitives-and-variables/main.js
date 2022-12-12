@@ -1,8 +1,6 @@
-var fullName;
-fullName = 'Junou Lee';
+var fullName = 'Junou Lee';
 var isCool = true;
-var totalPets;
-totalPets = 2;
+var totalPets = 2;
 var unknown = null;
 var never;
 
