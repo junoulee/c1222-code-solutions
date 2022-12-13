@@ -6,31 +6,19 @@ body {
   font-family: Karla, sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url("https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2") format("woff2");
-  unicode-range:
-    u+0000-00ff,
-    u+0131,
-    u+0152-0153,
-    u+02bb-02bc,
-    u+02c6,
-    u+02da,
-    u+02dc,
-    u+2000-206f,
-    u+2074,
-    u+20ac,
-    u+2122,
-    u+2191,
-    u+2193,
-    u+2212,
-    u+2215,
-    u+feff,
-    u+fffd;
+}
+
+.top-text {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
 }
 
 h1 {
   font-weight: 1000;
   letter-spacing: 0.2rem;
   font-size: 2.5em;
+  padding-top: 20px;
 }
 
 h3 {
@@ -55,9 +43,7 @@ img {
 }
 
 .column-full {
-  text-align: center;
   flex-basis: 100%;
-  padding: 5% 13%;
 }
 
 .row {
@@ -68,10 +54,9 @@ img {
 
 .column-half {
   flex-basis: calc(100% / 2);
-  width: 500px;
 }
 
-.column-half-row {
+.text {
   width: 100%;
   padding-right: 35px;
 }
