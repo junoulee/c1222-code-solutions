@@ -114,8 +114,9 @@ h4 {
   color: rgb(243 235 235 / 97.3%);
   padding: 10px 25px;
   border: none;
-  background-color: rgb(46 41 134);
+  background-color: rgb(41 68 100);
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .column-half-list {
@@ -182,11 +183,12 @@ h4 {
 #contact-button {
   border: none;
   color: rgb(243 235 235 / 97.3%);
-  background-color: rgb(46 41 134);
+  background-color: rgb(41 68 100);
   padding: 10px;
   font-size: 0.9rem;
   margin-left: 10px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 #logo {
