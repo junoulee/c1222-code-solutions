@@ -10,6 +10,8 @@ var randomNumber = Math.random();
 randomNumber = randomNumber * heroes.length;
 var randomIndex = Math.floor(randomNumber);
 console.log('randomIndex:', randomIndex);
+var randomHero = heroes[randomIndex];
+console.log('randomHero:', randomHero);
 
 var library = [{ title: 'Outliers', author: 'Gladwell' }, { title: '1984', author: 'Orwell' }, { title: 'Farenheit 451', author: 'Bradbury' }];
 var lastBook = library.pop();
