@@ -21,9 +21,27 @@ h1 {
   padding-top: 20px;
 }
 
+.caption {
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 h3 {
   font-size: 13px;
-  width: 80%;
+  width: 39%;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.paragraphs {
+  width: 60%;
+  margin-left: 90px;
+  margin-top: -20px;
 }
 
 p {
@@ -48,17 +66,10 @@ img {
 
 .row {
   display: flex;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .column-half {
   flex-basis: calc(100% / 2);
-}
-
-.text {
-  width: 100%;
-  padding-right: 35px;
 }
 
 form {
