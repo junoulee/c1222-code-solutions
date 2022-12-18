@@ -1,5 +1,4 @@
 /* exported getRightTriangleArea */
 function getRightTriangleArea(base, height) {
-  var answer = (base * height) / 2;
-  return answer;
+  return (base * height) / 2;
 }

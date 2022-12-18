@@ -1,5 +1,4 @@
 /* exported getSecondElement */
 function getSecondElement(array) {
-  var A = array[1];
-  return A;
+  return array[1];
 }

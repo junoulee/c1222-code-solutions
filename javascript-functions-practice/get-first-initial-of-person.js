@@ -1,5 +1,4 @@
 /* exported getFirstInitialOfPerson */
 function getFirstInitialOfPerson(person) {
-  var a = person.firstName[0];
-  return a;
+  return person.firstName[0];
 }
