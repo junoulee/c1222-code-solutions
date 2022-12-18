@@ -1,0 +1,64 @@
+body {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-style: normal;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(255 51 0 / 78.3%);
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+input#email,
+input#name,
+input#hiring,
+select,
+option {
+  margin: auto;
+  width: 95%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-color: rgb(213 212 212);
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1.8px;
+}
+
+button {
+  margin-left: 74%;
+  padding: 8px 25px;
+  border-radius: 30px;
+  background-color: rgb(255 51 0 / 78.3%);
+  border-color: rgb(255 123 0 / 78.3%);
+  border-style: solid;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+label {
+  font-weight: 525;
+  font-size: 0.8rem;
+  margin-left: 2%;
+}
+
+input#email::placeholder,
+input#name::placeholder,
+input#hiring::placeholder {
+  padding-left: 1.5%;
+  color: rgb(169 167 167);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+select {
+  background-color: rgb(245 243 243);
+  border-color: rgb(202 200 200 / 77.5%);
+}
