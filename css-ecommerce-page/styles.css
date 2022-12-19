@@ -41,12 +41,12 @@ h1 {
   padding-right: 8px;
 }
 
-#contain {
+#fill {
   object-fit: fill;
-  height: 240.61px;
+  height: 240px;
 }
 
-.bottom {
+.text {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
