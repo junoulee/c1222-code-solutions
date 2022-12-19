@@ -9,11 +9,12 @@
 
 .row {
   display: flex;
+}
+
+.top {
+  text-align: center;
   background-color: rgb(247 248 250);
-  margin-left: -40px;
-  margin-right: -40px;
-  padding-left: 100px;
-  padding-right: 100px;
+  height: 100%;
 }
 
 body {
@@ -22,26 +23,37 @@ body {
 }
 
 .column-quarter {
-  padding-left: 10px;
-  padding-right: 10px;
+  flex-basis: calc(100%/4);
 }
 
 .column-full {
   flex-basis: 100%;
-  text-align: center;
 }
 
 .top-image {
-  width: 100%;
+  width: 90%;
+}
+
+.middle {
+  background-color: rgb(247 248 250);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bottom-image {
-  width: 25%;
+  width: 17%;
+}
+
+section {
+  background-color: rgb(247 248 250);
+  margin-top: -3px;
+  padding-bottom: 10px;
 }
 
 h2 {
   font-size: 1rem;
   font-weight: 900;
+  padding-top: 10px;
 }
 
 h3 {
