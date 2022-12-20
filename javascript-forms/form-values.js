@@ -2,14 +2,14 @@ function getData(event) {
   console.log('submit');
 
   event.preventDefault();
-  var one = xx.elements.name.value;
-  var two = xx.elements.email.value;
-  var three = xx.elements.message.value;
-  var object = { name: one, email: two, message: three };
+  var nameValue = contactForm.elements.name.value;
+  var emailValue = contactForm.elements.email.value;
+  var messageValue = contactForm.elements.message.value;
+  var object = { name: nameValue, email: emailValue, message: messageValue };
 
   console.log(object);
-  xx.reset();
+  contactForm.reset();
 }
 
-var xx = document.querySelector('#contact-form');
-xx.addEventListener('submit', getData);
+var contactForm = document.querySelector('#contact-form');
+contactForm.addEventListener('submit', getData);

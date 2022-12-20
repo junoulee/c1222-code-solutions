@@ -13,18 +13,18 @@ function handleInput(event) {
   console.log('event.target.value', event.target.value);
 }
 
-var x = document.querySelector('#user-name');
-var y = document.querySelector('#user-email');
-var z = document.querySelector('user-message');
+var userName = document.querySelector('#user-name');
+var userEmail = document.querySelector('#user-email');
+var userMessage = document.querySelector('user-message');
 
-x.addEventListener('focus', handleFocus);
-x.addEventListener('blur', handleBlur);
-x.addEventListener('input', handleInput);
+userName.addEventListener('focus', handleFocus);
+userName.addEventListener('blur', handleBlur);
+userName.addEventListener('input', handleInput);
 
-y.addEventListener('focus', handleFocus);
-y.addEventListener('blur', handleBlur);
-y.addEventListener('input', handleInput);
+userEmail.addEventListener('focus', handleFocus);
+userEmail.addEventListener('blur', handleBlur);
+userEmail.addEventListener('input', handleInput);
 
-z.addEventListener('focus', handleFocus);
-z.addEventListener('blur', handleBlur);
-z.addEventListener('input', handleInput);
+userMessage.addEventListener('focus', handleFocus);
+userMessage.addEventListener('blur', handleBlur);
+userMessage.addEventListener('input', handleInput);
