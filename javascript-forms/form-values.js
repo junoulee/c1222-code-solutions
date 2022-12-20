@@ -3,8 +3,8 @@ function getData(event) {
 
   event.preventDefault();
   var one = xx.elements.name.value;
-  var two = xx.elements.name.value;
-  var three = xx.elements.name.value;
+  var two = xx.elements.email.value;
+  var three = xx.elements.message.value;
   var object = { name: one, email: two, message: three };
 
   console.log(object);
