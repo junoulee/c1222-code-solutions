@@ -25,25 +25,25 @@
 .button {
   border-style: solid;
   border-color: rgb(250 234 132);
-  border-width: 4em;
+  border-width: 5em;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: rgb(252 237 156);
+  box-shadow: 0  0 2px 2px rgb(252 237 156);
 }
 
 .button-clicked {
   border-style: solid;
-  border-color: gray;
-  border-width: 4em;
+  border-color: rgb(34 34 36);
+  border-width: 5em;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: rgb(252 237 156);
+  box-shadow: 0 -11px  rgb(12 12 12);
 }
 
-body {
+.bodytag {
   background-color: rgb(254 249 241);
 }
 
 .body-black {
-  background-color: black;
+  background-color: rgb(17 17 17);
 }

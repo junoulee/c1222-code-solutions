@@ -13,6 +13,9 @@ function lightBulb(event) {
   if (isOn === true) {
     click.className = 'button-clicked';
     bodyVar.className = 'body-black';
+  } if (isOn === false) {
+    click.className = 'button';
+    bodyVar.className = 'bodytag';
   }
 }
 
