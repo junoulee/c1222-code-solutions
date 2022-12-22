@@ -11,11 +11,13 @@ var bodyVar = document.querySelector('body');
 function lightBulb(event) {
 
   if (isOn === true) {
+
     isOn = false;
     click.className = 'button-clicked';
     bodyVar.className = 'body-black';
 
   } else if (isOn === false) {
+
     isOn = true;
     click.className = 'button';
     bodyVar.className = 'bodytag';

@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.button-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300%;
+}
+
+.button {
+  border-style: solid;
+  border-color: rgb(250 234 132);
+  border-width: 5em;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0  0 2px 2px rgb(252 237 156);
+}
+
+.button-clicked {
+  border-style: solid;
+  border-color: rgb(34 34 36);
+  border-width: 5em;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 -11px  rgb(12 12 12);
+}
+
+.bodytag {
+  background-color: rgb(254 249 241);
+}
+
+.body-black {
+  background-color: rgb(17 17 17);
+}
