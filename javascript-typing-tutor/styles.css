@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.text-area {
+  display: flex;
+  height: 400px;
+}
+
+.phrase {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 100%;
+  white-space: pre;
+  align-items: center;
+  justify-content: center;
+}
+
+#underline {
+  border-bottom: solid;
+}
+
+.span-default {
+  border-bottom: none;
+}
+
+.span-correct {
+  color: #42d542;
+  border-bottom: solid;
+  border-color: black;
+}
+
+.span-wrong {
+  color: red;
+  border-bottom: solid;
+  border-color: red;
+}
+
+.span-passed {
+  color: #42d542;
+}
