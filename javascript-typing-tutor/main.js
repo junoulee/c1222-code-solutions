@@ -5,7 +5,9 @@
 // make it turn green (className) and move to the next. if !==, make it turn red
 // if key logged is correct, make i++ outside of if statement
 // if key logged is incorrect, do i-- inside of 2nd if statement
-
+// set conditions in case characterList[i] is undefined because of being negative
+// set condition so that the last letter's border-bottom is removed after completion
+// (do that by setting i equal to characterList.length)
 var characterList = document.querySelectorAll('span');
 var lastLetter = document.querySelector('#last-one');
 
