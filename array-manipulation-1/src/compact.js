@@ -10,7 +10,7 @@ function compact(array) {
   var newArray = [];
   for (var i = 0; i < array.length; i++) {
     var x = Boolean(array[i]);
-    if (x.valueOf() === true) {
+    if (x === true) {
       newArray.push(array[i]);
     }
   }
