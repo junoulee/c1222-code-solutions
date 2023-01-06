@@ -26,15 +26,20 @@ Account.prototype.withdraw = function (amount) {
 };
 
 Account.prototype.getBalance = function () {
+  var balance = 0;
   if (this.transactions.length === 0) {
-    return 0;
-  } if (this.transactions.length > 0) {
-    var valuesArray = [];
-    for (var i = 0; i < this.transactions.length; i++) {
-
-      valuesArray.push(Object.values(this.transactions[i]));
-
-    }
-    return valuesArray;
+    balance = 0;
   }
+  var depositAmount = 0;
+  var withdrawAmount = 0;
+  var $transactions = this.transactions;
+  for (var i = 0; i < $transactions.length; i++) {
+    if ($transactions[i].type === 'deposit') {
+      depositAmount += $transactions[i].amount;
+    } if ($transactions[i].type === 'withdrawal') {
+      withdrawAmount += $transactions[i].amount;
+    }
+  }
+  balance = depositAmount - withdrawAmount;
+  return balance;
 };
