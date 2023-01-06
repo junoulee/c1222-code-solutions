@@ -27,15 +27,11 @@ Bank.prototype.getTotalAssets = function () {
   if (this.accounts.length === 0) {
     return balance;
   }
-  var depositAmount = 0;
-  var withdrawAmount = 0;
-  for (var i = 0; i < this.accounts.length; i++) {
-    if (this.accounts[i].transactions[i].type === 'deposit') {
-      depositAmount += this.accounts[i].transactions[i].amount;
-    } if (this.accounts[i].transactions[i].type === 'withdrawal') {
-      withdrawAmount += this.accounts[i].transactions[i].amount;
+  if (this.accounts.length > 0) {
+    for (var i = 0; i < this.accounts.length; i++) {
+
+      balance += this.accounts[i].getBalance();
     }
   }
-  balance = depositAmount - withdrawAmount;
   return balance;
 };
