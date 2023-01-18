@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.main-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dots {
+  text-align: center;
+}
+
+.fa-chevron-left {
+  margin-top: 250px;
+  margin-right: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.fa-chevron-right {
+  margin-top: 250px;
+  margin-left: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+}
