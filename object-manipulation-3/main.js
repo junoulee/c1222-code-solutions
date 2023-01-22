@@ -65,10 +65,9 @@ function winner() {
   var index = playerScores.indexOf(winner);
   playerScores.splice(index, 1, 0);
 
-  for (i = 0; i < playerScores.length; i++) {
-    var winnerTwo = Math.max(...playerScores);
-    var indexTwo = playerScores.indexOf(winnerTwo);
-  }
+  var winnerTwo = Math.max(...playerScores);
+  var indexTwo = playerScores.indexOf(winnerTwo);
+
   if (winner === winnerTwo) {
     console.log('Winner: player ' + (index + 1), 'score: ' + winner, ', player ' + (indexTwo + 1), 'score: ' + winnerTwo, scoreBoard);
   } else { console.log('Winner: player ' + (index + 1), 'score: ' + winner, scoreBoard); }
