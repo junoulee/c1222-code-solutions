@@ -1,0 +1,500 @@
+   76  git branch javascript-and-json
+   77  git branch --list
+   78  git switch javascript-and-json
+   79  git add javascript-and-jason
+   80  git add javascript-and-json
+   81  git commit -m "javascript-and-json - Junou Lee"
+   82  git push origin javascript-and-json
+   83  git add javascript-and-json
+   84  git add javascript-and-json
+   85  git commit -m "javascript-and-json revised - Junou Lee"
+   86  git push origin javascript-and-json
+   87  git switch main
+   88  git pull origin main
+   89  git branch javascript-local-storage
+   90  git branch --list
+   91  git switch javascript-local-storage
+   92  git add javascript-local-storage
+   93  git status
+   94  git commit -m "javascript-local-storage - Junou Lee"
+   95  git push origin javascript-local-storage
+   96  git switch main
+   97  git pull origin main
+   98  git branch javascript-typing-tutor
+   99  git branch --list
+  100  git switch javascript-typing-tutor
+  101  git add javascript-typing-tutor
+  102  git commit -m "javascript-typing-tutor - Junou Lee"
+  103  git push origin javascript-typing-tutor
+  104  git add javascript-typing-tutor
+  105  git commit -m "updated pseudo codes"
+  106  git push origin javascript-typing-tutor
+  107  git switch css-four-column-layout
+  108  git add css-four-column-layout
+  109  git commit -m "revised"
+  110  git push origin css-four-column-layout
+  111  git switch string-manipulation-2
+  112  git add string-manipulation-2
+  113  git commit -m "string-manipulation-2 - Junou Lee"
+  114  git push origin string-manipulation-2
+  115  git switch main
+  116  git pull origin main
+  117  git switch javascript-local-storage
+  118  git add javascript-local-storage
+  119  git commit -m "fixed"
+  120  git push origin javascript-local-storage
+  121  git switch main
+  122  git pull origin main
+  123  git switch string-manipulation-2
+  124  git switch string-manipulation-1
+  125  git status
+  126  git add string-manipulation-1
+  127  git status
+  128  git commit -m "fixed"
+  129  git push origin string-manipulation-1
+  130  git switch array-manipulation-1
+  131  git status
+  132  git add array-manipulation-1
+  133  git status
+  134  git commit -m "fixed"
+  135  git push origin array-manipulation-1
+  136  git switch main
+  137  git pull origin
+  138  git branch string-manipulation-2
+  139  git branch array-manipulation-2
+  140  git branch --list
+  141  git switch array-manipulation-2
+  142  git status
+  143  git add array-manipulation-2
+  144  git status
+  145  git commit -m "array-manipulation-2 - Junou Lee"
+  146  git push origin array-manipulation-2
+  147  git switch main
+  148  git pull origin main
+  149  git branch object-manipulation-2
+  150  git branch --list
+  151  git switch object-manipulation-2
+  152  git switch main
+  153  git pull origin main
+  154  git branch javascript-custom-methods
+  155  git branch --list
+  156  git switch javascript-custom-methods
+  157  git status
+  158  git add javascript-custom-methods
+  159  git commit -m "javascript-custom-methods - Junou Lee"
+  160  git push origin javascript-custom-methods
+  161  git switch main
+  162  git pull origin main
+  163  git branch javascript-this
+  164  git branch --list
+  165  git switch javascript-this
+  166  git status
+  167  git add javascript-this
+  168  git status
+  169  git commit -m "javascript-this - Junou Lee"
+  170  git push origin javascript-this
+  171  git switch main
+  172  git pull origin main
+  173  git branch javascript-prototypes
+  174  git branch --list
+  175  git switch javascript-prototypes
+  176  git status
+  177  git add javascript-prototypes
+  178  git commit -m "javascript-prototypes - Junou Lee"
+  179  git push origin javascript-prototypes
+  180  git switch main
+  181  git pull origin main
+  182  git branch javascript-constructors
+  183  git branch --list
+  184  git switch javascript-constructors
+  185  git status
+  186  git add javascript-constructors
+  187  git status
+  188  git commit -m "javascript-constructors - Junou Lee"
+  189  git push origin javascript-constructors
+  190  git switch main
+  191  git pull origin main
+  192  git branch javascript-timers
+  193  git branch --list
+  194  git switch javascript-timers
+  195  git status
+  196  git add javascript-timers
+  197  git commit -m "javascript-timers"
+  198  git push origin javascript-timers
+  199  git status
+  200  git add javascript-timers
+  201  git commit -m "javascript-timers - Junou Lee"
+  202  git push origin javascript-timers
+  203  git switch main
+  204  git pull origin main
+  205  git branch javascript-bank
+  206  git branch --list
+  207  git switch javascript-bank
+  208  git status
+  209  git add javascript-bank
+  210  git commit -m "not done"
+  211  git push origin javascript-bank
+  212  git switch main
+  213  git pull origin main
+  214  git branch http-messages
+  215  git branch --list
+  216  git switch http-messages
+  217  http https://example.com
+  218  http --verbose http://www.example.com
+  219  http --verbose http://www.example.com
+  220  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  221  http --body GET https://example.com > http-messages/index.html
+  222  git status
+  223  git add http-messages
+  224  git commit -m "http-messages - Junou Lee"
+  225  git push origin http-messages
+  226  git switch main
+  227  git pull origin main
+  228  git branch javascript-ajax
+  229  git branch --list
+  230  git switch javascript-ajax
+  231  git status
+  232  git add javascript-ajax
+  233  git commit -m "javascript-ajax- Junou Lee"
+  234  git push origin javascript-ajax
+  235  git switch main
+  236  git pull origin main
+  237  http https://http.cat/[status_code]
+  238  http https://http.cat/
+  239  http example.com
+  240  http get example.com
+  241  http https://http.cat/[100]
+  242  http https://http.dog/[100].jpg
+  243  http https://www.fishwatch.gov/api/species
+  244  http https://api.adoptapet.com/search/pets_at_shelter?key=A34F48&v=1&output=xml&shelter_id=2342
+  245  http GET https://emojihub.yurace.pro/api/all
+  246  http https://http.cat/[101]
+  247  http https://http.cat/101
+  248  git switch javascript-bank
+  249  git status
+  250  git add javascript-bank
+  251  git commit -m "almost done"
+  252  git push origin javascript-bank
+  253  git status
+  254  git add javascript-bank
+  255  git commit -m "javascript-bank - Junou Lee"
+  256  git origin push javascript-bank
+  257  git push origin javascript-bank
+  258  git switch main
+  259  git pull origin main
+  260  git status
+  261  git switch javascript-bank
+  262  git add javascript-bank
+  263  git status
+  264  http https://holidayapi.com/dashboard
+  265  http https://holidayapi.com
+  266  http https://holidayapi.com/dashboard == 6433ce20-3007-459e-ab5f-432666a0290d
+  267  http https://holidayapi.com/dashboard app_key ==6433ce20-3007-459e-ab5f-432666a0290d
+  268  λ http https://holidayapi.com api_key==6433ce20-3007-459e-ab5f-432666a0290d
+  269  http https://holidayapi.com api_key==6433ce20-3007-459e-ab5f-432666a0290d
+  270  http https://holidayapi.com app_key==6433ce20-3007-459e-ab5f-432666a0290d
+  271  http curl -G -d country="US" -d year="2022" -d pretty
+  272  -d key="6433ce20-3007-459e-ab5f-432666a0290d" "https://holidayapi.com/v1/holidays"
+  273  curl -G -d country=="US" -d year=="2022" -d pretty
+  274  -d key=="6433ce20-3007-459e-ab5f-432666a0290d" "https://holidayapi.com/v1/holidays"
+  275  http https://api.ksoft.si/lyrics/search
+  276  http https://api.ksoft.si/lyrics
+  277  http https://api.goprogram.ai/inspiration
+  278  http curl -X GET https://api.goprogram.ai/inspiration
+  279  http GET https://api.goprogram.ai/inspiration
+  280   http GET https://api.goprogram.ai/inspiration
+  281   http GET https://api.goprogram.ai/inspiration
+  282   http GET https://api.goprogram.ai/inspiration
+  283   http GET https://api.goprogram.ai/inspiration
+  284   http GET https://api.goprogram.ai/inspiration
+  285   http GET https://api.goprogram.ai/inspiration
+  286   http GET https://api.goprogram.ai/inspiration
+  287   http GET https://api.goprogram.ai/inspiration
+  288   http GET https://api.goprogram.ai/inspiration
+  289   http GET https://api.goprogram.ai/inspiration
+  290  http https://stats.nba.com/stats/playerprofile
+  291  http https://api.edamam.com/api/recipes/v2 type==publie app_id==a1100983 app_key==
+  292  e2ed55cd9fd501a90232f2085e84df8c q=pasta
+  293  http https://api.edamam.com/api/recipes/v2 type==publie app_id==a1100983 app_key==
+  294  e2ed55cd9fd501a90232f2085e84dfc q==pasta
+  295  http https://api.edamam.com/api/recipes/v2 type==public app_id==a1100983 app_key==
+  296  e2ed55cd9fd501a90232f2085e84dfc q==pasta
+  297  http https://api.edamam.com/api/recipes/v2 type==public app_id==a1100983 app_key==
+  298  e2ed55cd9fd501a90232f2085e84df8c	—
+  299  q==pasta
+  300  http https://api.edamam.com/api/recipes/v2 type==public app_id==a1100983 app_key==e2ed55cd9fd501a90232f2085e84df8c q==pasta
+  301  git switch object-manipulation-2
+  302  git status
+  303  git add object-manipulation-2
+  304  git commit -m "not done"
+  305  git switch javascript-bank
+  306  git status
+  307  git switch object-manipulation-2
+  308  git commit -m "not done"
+  309  git push origin object-manipulation-2
+  310  http GET /api/recipes/v2 app_id==a1100983 app_key==e2ed55cd9fd501a90232f2085e84df8c q==pasta	 
+  311  http https://api.edamam.com/api/recipes/v2 app_id==a1100983 app_key==e2ed55cd9fd501a90232f2085e84df8c q==pasta 
+  312  http https://api.edamam.com/api/recipes/v2 app_id==a1100983 app_key==e2ed55cd9fd501a90232f2085e84df8c q==pasta type==public
+  313  git switch javascript-bank
+  314  git switch main
+  315  git pull origin main
+  316  git branch javascript-carousel
+  317  git branch --list
+  318  git switch javascript-carousel
+  319  git status
+  320  git add javascript-carousel
+  321  git commit -m "not done"
+  322  git status
+  323  git add javascript-carousel/main.js
+  324  git status
+  325  git commit -m "not done"
+  326  git push origin javascript-carousel
+  327  git switch object-manipulation-2
+  328  git status
+  329  git add object-manipulation-2
+  330  git status
+  331  git commit -m "object-manipulation-2 - Junou Lee"
+  332  git status
+  333  git add object-manipulation-2
+  334  git status
+  335  git commit -m "object-manipulation-2 - Junou Lee"
+  336  git push origin object-manipulation-2
+  337  git switch string-manipulation-2
+  338  git status
+  339  git add string-manipulation-2
+  340  git commit -m "fixed"
+  341  git push origin string-manipulation-2
+  342  git switch main
+  343  git pull origin main
+  344  git branch string-manipulation-3
+  345  bit branch --list
+  346  git branch --list
+  347  git switch string-manipulation-3
+  348  git switch array-manipulation-2
+  349  git switch string-manipulation-3
+  350  git add string-manipulation-3
+  351  git commit -m "not done"
+  352  git push origin string-manipulation-3
+  353  git switch string-manipulation-2
+  354  git switch string-manipulation-3
+  355  git status
+  356  git add string-manipulation-3
+  357  git status
+  358  git commit -m "not done"
+  359  git push origin string-manipulation-3
+  360  git status
+  361  git add string-manipulation-3
+  362  git commit -m "not done"
+  363  git push origin string-manipulation-3
+  364  git status
+  365  git add string-manipulation-3
+  366  git commit -m "string-manipulation-3 - Junou Lee"
+  367  git push origin string-manipulation-3
+  368  git switch main
+  369  git pull origin main
+  370  git switch string-manipulation-3
+  371  git switch array-manipulation-2
+  372  git status
+  373  git add array-manipulation-2
+  374  git commit -m "fixed changes"
+  375  git push origin array-manipulation-2
+  376  git status
+  377  git add array-manipulation-3
+  378  git commit -m "array-manipulation-3 - Junou Lee"
+  379  git switch main
+  380  git branch array-manipulation-3
+  381  git switch array-manipulation-3
+  382  git status
+  383  git add array-manipulation-3
+  384  git switch main
+  385  git pull origin main
+  386  git switch array-manipulation-3
+  387  git status
+  388  git add array-manipulation-3
+  389  git switch array-manipulation-2
+  390  git switch array-manipulation-3
+  391  git status
+  392  git add array-manipulation-3
+  393  git commit -m "array-manipulation-3 - Junou Lee"
+  394  git push origin array-manipulation-3
+  395  git switch array-manipulation-2
+  396  git reset --hard
+  397  git switch main
+  398  git pull origin main
+  399  git branch object-manipulation-3
+  400  git branch --list
+  401  git switch object-manipulation-3
+  402  git status
+  403  git add object-manipulation-3
+  404  git status
+  405  git commit -m "object-manipulation-3 - Junou Lee"
+  406  git push origin object-manipulation-3
+  407  git switch main
+  408  git pull origin main
+  409  git switch object-manipulation-3
+  410  git status
+  411  git add object-manipulation-3
+  412  git status
+  413  git commit -m "object-manipulation-3 v2 - Junou Lee"
+  414  git push origin object-manipulation-3
+  415  git switch main
+  416  git pull origin main
+  417  git switch string-manipulation-3
+  418  git switch array-manipulation-3
+  419  git switch main
+  420  git pull origin main
+  421  git branch es6-const-let
+  422  git branch--list
+  423  git branch --list
+  424  git switch es6-const-let
+  425  git status
+  426  git add es6-const-let
+  427  git commit -m "es6-const-let - Junou Lee"
+  428  git push origin es6-const-let
+  429  git status
+  430  git add es6-const-let
+  431  git status
+  432  git push origin es6-const-let
+  433  git commit -m "fixed"
+  434  git push origin es6-const-let
+  435  git switch main
+  436  git pull origin main
+  437  git branch es6-template-literals
+  438  git branch --list
+  439  git switch es6-template-literals
+  440  git status
+  441  git add es6-template-literals
+  442  git status
+  443  git commit -m "es6-template-literals - Junou Lee"
+  444  git push origin es6-template-literals
+  445  git switch main
+  446  git pull origin main
+  447  git branch es6-destructuring
+  448  git branch --list
+  449  git switch es6-destructuring
+  450  git switch array-manipulation-3
+  451  git switch es6-destructuring
+  452  git status
+  453  git add es6-destructuring
+  454  git status
+  455  git commit -m "es6-destructuring - Junou Lee"
+  456  git push origin es6-destructuring
+  457  git switch main
+  458  git pull origin main
+  459  git branch es6-arrow-functions
+  460  git branch --list
+  461  git switch es6-arrow-functions
+  462  git status
+  463  git add es6-arrow-functions
+  464  git commit -m "es6-arrow-functions"
+  465  git push origin es6-arrow-functions
+  466  git status
+  467  git switch main
+  468  git status
+  469  git status
+  470  git branch command-line-basics
+  471  git branch --list
+  472  git switch command-line-basics
+  473  cd name-of-exercise
+  474  cd command-line-basics
+  475  man man
+  476  man cat
+  477  man cat laziness.txt
+  478  cat laziness.txt
+  479  cat impatience.txt
+  480  cat hubris.txt
+  481  man cat
+  482  cat laziness.txt - cat hubris.txt
+  483  cd command-line-basics
+  484  man cat
+  485  cat laziness.txt
+  486  cat impatience.txt
+  487  cat hubris.txt
+  488  man cat
+  489  cat laziness.txt - hubris.txt
+  490  cd command-line-basics
+  491  cat laziness.txt
+  492  cat impatience.txt
+  493  cat hubris.txt
+  494  man cat
+  495  cat -A
+  496  cd command-line-basics
+  497  cat laziness.txt
+  498  cat impatience.txt
+  499  cat hubris.txt
+  500  cat
+  501  cd command-line-basics
+  502  cat laziness.txt
+  503  cat impatience.txt
+  504  cat hubris.txt
+  505  man cat
+  506  -A
+  507  --show-all
+  508  cat --show-all
+  509  cat [-A] [laxiness.txt]
+  510  cat [-A] [laziness.txt]
+  511  cat laziness.txt impatience.txt hubris.txt
+  512  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  513  cat three-virtues.txt
+  514  man ls
+  515  man ls
+  516  ls
+  517  ls -a
+  518  ls -F
+  519  man ls
+  520  ls lfz-staff/
+  521  ls lfz-staff/ -a
+  522  ls lfz-staff/ -F
+  523  ls -aF lfz-staff > lfz-staff/contents.txt
+  524  cat lfz-staff/contents.txt
+  525  man pwd
+  526  pwd
+  527  pwd > i-was-here.txt
+  528  ls
+  529  cat i-was-here.txt
+  530  man echo
+  531  echo 'Hello, World!'
+  532  echo 'Hello, World!' > hello.txt
+  533  ls
+  534  cat hello.txt
+  535  man touch
+  536  touch tag-youre-it.txt
+  537  touch boop.txt > snoot/boop.txt
+  538  ls
+  539  ls snoot/
+  540  man mkdir
+  541  mkdir parent
+  542  ls
+  543  ls parent/
+  544  mkdir -p parent/child/grandchild
+  545  touch .gitkeep > parent/child/grandchild
+  546  touch parent/child/grandchild > .gitkeep
+  547  ls -a
+  548  ls parent/
+  549  ls parent/child/
+  550  ls parent/child/granchild/
+  551  ls parent/child/grandchild/
+  552  ls parent/child/grandchild
+  553  ls parent/child/grandchild/
+  554  ls -a parent/child/grandchild/
+  555  ls -a parent/child/grandchild/..
+  556  ls -a parent/child/grandchild/.
+  557  ls -a parent/child/grandchild
+  558  touch .gitkeep > parent/child/grandchild/.gitkeep
+  559  ls -a
+  560  ls -a parent/child/grandchild/
+  561  man mv
+  562  mv pokiemans pokemon
+  563  ls
+  564  man rm
+  565  rm lol.txt
+  566  ls
+  567  rm -r kill-me/
+  568  ls
+  569  man cp
+  570  cp and-then.txt no-and-then.txt
+  571  ls
+  572  cat and-then.txt no-and-then.txt
+  573  history
+  574  cat history > command-history.txt
+  575  history > command-history.txt
