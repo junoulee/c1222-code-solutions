@@ -4,31 +4,38 @@
     "node": true,
     "browser": true
   },
-  "parserOptions": {
-    "ecmaVersion": 2015
-  },
   "extends": [
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "eslint:recommended",
     "standard"
   ],
   "settings": {
     "react": {
-      "version": "detect"
+      "version": "16"
     }
   },
   "rules": {
     "arrow-parens": [
       "error",
-      "as-needed"
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "ignore",
+        "exports": "ignore",
+        "functions": "never"
+      }
     ],
     "curly": [
       "error",
       "multi-line"
     ],
+    "no-var": "off",
     "no-console": [
-      "error",
+      "warn",
       {
         "allow": [
           "warn",
@@ -36,15 +43,12 @@
         ]
       }
     ],
-    "no-restricted-globals": [
-      "error",
-      {
-        "name": "event",
-        "message": "Listener function's event parameter is missing."
-      }
-    ],
-    "no-var": "off",
+    "object-shorthand": "off",
     "padded-blocks": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
     "space-before-function-paren": [
       "error",
       {
@@ -52,13 +56,6 @@
         "named": "never",
         "asyncArrow": "always"
       }
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "react/jsx-filename-extension": [
-      "error"
     ]
   },
   "overrides": [
@@ -75,29 +72,14 @@
         "**/*.jsx"
       ],
       "rules": {
-        "react/prop-types": "off",
-        "react/jsx-curly-brace-presence": [
-          "error",
-          "never"
-        ],
         "react/jsx-indent": [
           "error",
           2,
-          { "checkAttributes": true }
-        ],
-        "react/self-closing-comp": [
-          "error",
           {
-            "html": false,
-            "component": true
+            "checkAttributes": true
           }
         ],
-        "react/style-prop-object": [
-          "error"
-        ],
-        "react/no-this-in-sfc": [
-          "error"
-        ]
+        "react/prop-types": "off"
       }
     },
     {
