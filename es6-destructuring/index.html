@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+  <script>
+    const book1 = { title: 'Goodnight Punpun', author: 'Inio Asano', libraryID: 3353 };
+    const { title, author, libraryID } = book1;
+    console.log('The title of the book is', title, 'the author is', author, 'and the libray id is', libraryID);
+
+const book2 = {
+  title: 'Les Fleurs du mal',
+  author: 'Charles Baudelaire',
+  libraryID: 2345
+};
+
+const { title: otherTitle, author: otherAuthor, libraryID: otherID } = book2;
+console.log('The title of the book is', otherTitle, 'the author is', otherAuthor, 'and the libray id is', otherID);
+
+const library = [
+  {
+    title: 'The Road Ahead',
+    author: 'Bill Gates',
+    libraryID: 1254
+  },
+  {
+    title: 'Walter Isaacson',
+    author: 'Steve Jobs',
+    libraryID: 4264
+  },
+  {
+    title: 'Mockingjay: The Final Book of The Hunger Games',
+    author: 'Suzanne Collins',
+    libraryID: 3245
+  },
+  {
+    title: "Dead Dead Demon's De De De De Destruction",
+    author: 'Inio Asano',
+    libraryID: 1233
+  }
+];
+
+const [x, y, z] = library;
+console.log('book1', x);
+console.log('book2', y);
+console.log('book3', z);
+
+const [,,, fourth] = library;
+console.log('book4', fourth);
+  </script>
+
+</body>
+</html>
