@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
-let nextId = 1;
-
-const grades = {};
 express.json();
 app.use(express.json());
+let nextId = 1;
+const grades = {};
 
 app.get('/api/grades', (req, res) => {
   const gradesArray = [];
