@@ -48,8 +48,7 @@ app.post('/api/notes', (req, res) => {
   }
   const postId = jsonData.nextId;
   req.body.id = postId;
-  let newEntry = jsonData.notes[postId];
-  newEntry = req.body;
+  const newEntry = req.body;
   jsonData.notes[postId] = newEntry;
   jsonData.nextId++;
   fs.writeFile('./data.json', JSON.stringify(jsonData, null, 2), 'utf8',
@@ -95,8 +94,7 @@ app.put('/api/notes/:id', (req, res) => {
     return res.status(404).send(`{ "error": "cannot find note with id ${putId}"}`);
   }
   req.body.id = Number(putId);
-  let updatedNote = jsonData.notes[putId];
-  updatedNote = req.body;
+  const updatedNote = req.body;
   jsonData.notes[putId] = updatedNote;
   fs.writeFile('./data.json', JSON.stringify(jsonData, null, 2), 'utf8',
     (err) => {
