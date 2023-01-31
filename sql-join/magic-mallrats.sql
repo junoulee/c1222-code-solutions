@@ -1,7 +1,7 @@
 select "inventoryId",
       "filmId",
       "rentalId",
-      films.title as title,
+      films.title,
       "customerId",
       "firstName",
       "lastName"
