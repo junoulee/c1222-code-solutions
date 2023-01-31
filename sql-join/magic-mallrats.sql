@@ -5,7 +5,7 @@ select "inventoryId",
       "customerId",
       "firstName",
       "lastName"
-from films as films
+from films
 join inventory using ("filmId")
 join rentals using ("inventoryId")
 join customers using ("customerId")
