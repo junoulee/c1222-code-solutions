@@ -1,7 +1,7 @@
 select line1,
-      city.name as city,
+      city.name,
       district,
-      country.name as country
+      country.name
 from cities as city
 join addresses using ("cityId")
 join countries as country using ("countryId");
