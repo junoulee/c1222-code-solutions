@@ -1,16 +1,16 @@
 
 select
-payments."customerId",
-   payments."rentalId",
-
-
-        amount,
-        sum(amount) as "totalSpent"
+customers."firstName",
+        customers."lastName",
 
 
 
-      from payments
+        sum(payments.amount) as "totalSpent"
 
-      join rentals using ("rentalId")
 
+
+      from customers
+
+      join payments using ("customerId")
+      group by customers."customerId"
          order by "totalSpent" desc;
