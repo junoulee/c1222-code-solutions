@@ -5,16 +5,12 @@ export function ToggleSwitch() {
   function handleClick() {
     setIsOn(!isOn);
   }
-  if (isOn) {
-    return (
-      <div className='box'>
-        <label className="switch">
-          <input onClick={handleClick} type="checkbox"></input>
-          <span className="slider round"></span>
-        </label>
-        <h4>ON</h4>
-      </div>
-    );
+
+  function setText() {
+    if (isOn) {
+      return 'ON';
+    }
+    return 'OFF';
   }
   return (
     <div className='box'>
@@ -22,8 +18,7 @@ export function ToggleSwitch() {
         <input onClick={handleClick} type="checkbox"></input>
         <span className="slider round"></span>
       </label>
-      <h4>OFF</h4>
+      <h4>{setText()}</h4>
     </div>
   );
-
 }
