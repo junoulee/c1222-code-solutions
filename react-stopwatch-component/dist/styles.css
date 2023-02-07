@@ -1,0 +1,28 @@
+.play {
+  font-size: 1.5rem;
+  margin-left: 45px;
+  margin-top: 5px;
+}
+
+.pause {
+  font-size: 1.5rem;
+  margin-left: 45px;
+  margin-top: 5px;
+}
+
+.circles {
+  align-items: center;
+}
+
+h3 {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: white;
+  border-style: solid;
+  border-color: black;
+}
