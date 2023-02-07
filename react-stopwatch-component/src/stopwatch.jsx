@@ -7,18 +7,16 @@ export function StopWatch() {
 
   function startTimer() {
     if (!play) {
-
       const count = setInterval(() => {
-        setPlay(true);
-        setPauseID(count);
         setSeconds((seconds) => seconds + 1);
       }, 1000);
+      setPlay(true);
+      setPauseID(count);
     }
-    playPause(pauseID);
+    clearInterval(pauseID);
   }
 
   function playPause() {
-    clearInterval(pauseID);
     setPlay(!play);
   }
 
