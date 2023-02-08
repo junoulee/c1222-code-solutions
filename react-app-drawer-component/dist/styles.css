@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  max-width: 300px;
+  margin-left: 20px;
+  font-family: monospace;
+  font-size: 2rem;
+  background-color: white;
+}
+
+a {
+  cursor: pointer;
+}
+
+.links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.burger {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  background:
+    linear-gradient(
+      rgb(33 32 32 / 80%),
+      rgb(33 32 32 / 80%)
+    );
+  top: 0;
+  bottom: 0;
+  left: 300px;
+  right: 0;
+  width: 100%;
+}
