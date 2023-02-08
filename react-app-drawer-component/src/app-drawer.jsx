@@ -9,6 +9,7 @@ export function AppDrawer() {
 
   return (
     <>
+      <img src="https://m.media-amazon.com/images/I/71Wu+ZcUsqL._AC_UF894,1000_QL80_.jpg" alt="" />
       <i className={clicked ? 'hidden' : 'fa-solid fa-bars burger' }
         onClick={handleClick}></i>
       <div className={clicked ? 'menu' : 'hidden'}>
@@ -26,6 +27,7 @@ export function AppDrawer() {
       <div className={!clicked ? 'hidden' : 'overlay' }
         onClick={handleClick} >
       </div>
+
     </>
   );
 }
