@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 500px;
+}
+
+.item {
+  background-color: #ddd;
+  border-style: solid;
+  margin-bottom: 1px;
+  padding: 10px 20px;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  background-color: white;
+  border-style: solid;
+  margin-bottom: 1px;
+  padding: 10px 20px;
+}
