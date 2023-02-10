@@ -18,9 +18,10 @@ export function Carousel({ images }) {
     const newIndex = lastSlide ? 0 : currentSlide + 1;
     setCurrentSlide(newIndex);
   };
-  const blackDot = (i) => {
+  const clickDot = (i) => {
     setCurrentSlide(i);
   };
+
   return (
     <div className='wrapper'>
       <div className='carousel'>
@@ -35,8 +36,8 @@ export function Carousel({ images }) {
           {images.map((slide, i) => {
             return (
               <i key={i}
-              onClick={() => blackDot(i)}
-              className="fa-regular fa-circle circle"></i>
+                onClick={() => clickDot(i)}
+                className={(i === currentSlide) ? 'fa-solid fa-circle circle' : 'fa-regular fa-circle circle'}></i>
             );
           })}
         </div>
@@ -44,5 +45,3 @@ export function Carousel({ images }) {
     </div>
   );
 }
-
-// { /* <i key={id} className="fa-solid fa-circle circle"></i> */ }
