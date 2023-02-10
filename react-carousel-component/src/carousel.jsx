@@ -33,13 +33,11 @@ export function Carousel({ images }) {
         </div>
 
         <div className='dots'>
-          {images.map((slide, i) => {
-            return (
-              <i key={i}
+          {images.map((slide, i) =>
+            <i key={images[i].id}
                 onClick={() => clickDot(i)}
                 className={(i === currentSlide) ? 'fa-solid fa-circle circle' : 'fa-regular fa-circle circle'}></i>
-            );
-          })}
+          )}
         </div>
       </div>
     </div>
