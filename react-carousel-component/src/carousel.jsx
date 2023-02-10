@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export function Carousel({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -6,6 +6,13 @@ export function Carousel({ images }) {
   const lengthOfArray = images.length;
   const id = images[currentSlide].id;
   const slideImage = images[currentSlide].image;
+
+  useEffect(() => {
+    const slideShow = setTimeout(() => {
+      next();
+    }, 3000);
+    return () => clearTimeout(slideShow);
+  }, [currentSlide, images]);
 
   const previous = () => {
     const firstSlide = currentSlide === 0;
