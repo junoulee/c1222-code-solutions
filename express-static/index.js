@@ -3,8 +3,7 @@ const app = express();
 const path = require('node:path');
 
 const pathJoin = path.join(__dirname, 'public');
-console.log(pathJoin);
-const middleWare = express.static('public');
+const middleWare = express.static(pathJoin);
 app.use(middleWare);
 
 app.listen(3000, () => {
