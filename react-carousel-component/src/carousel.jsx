@@ -8,6 +8,7 @@ export function Carousel({ images }) {
   const slideImage = images[currentSlide].image;
 
   useEffect(() => {
+    // or I can do = setTimeout(next,3000)
     const slideShow = setTimeout(() => {
       next();
     }, 3000);
