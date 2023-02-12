@@ -20,13 +20,7 @@ export function StopWatch() {
     setPlay(!play);
   }
 
-  function controlButton() {
-    if (play) {
-      return 'fa-solid fa-pause pause';
-    }
-    return 'fa-solid fa-play play';
-  }
-  function resetEverything() {
+  function reset() {
     if (!play) {
       clearInterval(setSeconds(0));
     }
@@ -34,11 +28,15 @@ export function StopWatch() {
 
   return (
     <div className="circles">
-      <h3 onClick={resetEverything}>{seconds}</h3>
-      <i onClick={() => {
-        startTimer();
-        playPause();
-      }} className={controlButton()}></i>
+      <h3 onClick={reset}>{seconds}</h3>
+      <Button play={play} onClick= {() => { startTimer(); playPause(); }} />
     </div>
+  );
+}
+
+function Button({ onClick, play }) {
+  const className = play ? 'fa-solid fa-pause pause' : 'fa-solid fa-play play';
+  return (
+    <i onClick={onClick} className={className}></i>
   );
 }

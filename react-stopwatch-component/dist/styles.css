@@ -2,12 +2,14 @@
   font-size: 1.5rem;
   margin-left: 45px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .pause {
   font-size: 1.5rem;
   margin-left: 45px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .circles {
@@ -25,4 +27,5 @@ h3 {
   background: white;
   border-style: solid;
   border-color: black;
+  cursor: pointer;
 }
