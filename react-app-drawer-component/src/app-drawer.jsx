@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 
 export function AppDrawer() {
-  const [clicked, setClicked] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
-    setClicked(!clicked);
+    setIsOpen(!isOpen);
   }
 
   return (
     <>
       <img src="https://m.media-amazon.com/images/I/71Wu+ZcUsqL._AC_UF894,1000_QL80_.jpg" alt="" />
-      <i className={clicked ? 'hidden' : 'fa-solid fa-bars burger' }
-        onClick={handleClick}></i>
-      <div className={clicked ? 'menu' : 'hidden'}>
+      {!isOpen && <BurgerIcon onClick={handleClick} />}
+      <div className={isOpen ? 'menu' : 'hidden'}>
         <h3>Menu</h3>
         <div className='links'>
           <a onClick={handleClick}>About</a>
@@ -24,10 +23,18 @@ export function AppDrawer() {
           <a onClick={handleClick}>Sign In</a>
         </div>
       </div>
-      <div className={!clicked ? 'hidden' : 'overlay' }
-        onClick={handleClick} >
-      </div>
-
+      {isOpen && <Overlay onClick={handleClick} />}
     </>
   );
+
+}
+
+function BurgerIcon({ isOpen, onClick }) {
+  const className = 'fa-solid fa-bars burger';
+  return <i onClick={onClick} className={className} />;
+}
+
+function Overlay({ isOpen, onClick }) {
+  const className = 'overlay';
+  return <div className={className} onClick={onClick}></div>;
 }
