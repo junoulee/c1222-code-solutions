@@ -9,7 +9,7 @@ export default function App() {
 
   /* your code here (hint: useEffect) */
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.co/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
