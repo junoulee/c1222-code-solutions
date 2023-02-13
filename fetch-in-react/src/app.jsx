@@ -13,12 +13,13 @@ export default function App() {
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.error('There was an error!', error);
         setError(error);
+        setIsLoading(false);
       });
-    setIsLoading(false);
   }, []);
 
   if (isLoading) {
