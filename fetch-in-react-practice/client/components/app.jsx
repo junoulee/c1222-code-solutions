@@ -77,6 +77,7 @@ export default function App() {
     })
       .then((response) => response.json())
       .then((data) => {
+        const index = todos.findIndex((data) => data.todoId === todoId);
         const newTodos = [...todos];
         newTodos.splice(index, 1, data);
         setTodos(newTodos);
@@ -115,9 +116,9 @@ export default function App() {
       <div className="row">
         <div className="col pt-5">
           {error && <h2 style={{ color: 'red' }}>There was an error: {error.message}</h2>}
-          {!error && <PageTitle text="Todo App" />}
-          {!error && <TodoForm onSubmit={addTodo} />}
-          {!error && <TodoList todos={todos} toggleCompleted={toggleCompleted} />}
+          <PageTitle text="Todo App" />
+          <TodoForm onSubmit={addTodo} />
+          <TodoList todos={todos} toggleCompleted={toggleCompleted} />
         </div>
       </div>
     </div>
