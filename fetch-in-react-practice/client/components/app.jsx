@@ -51,7 +51,7 @@ export default function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        const replica = [...todos];
+        const replica = todos;
         const newTodos = replica.concat(data);
         setTodos(newTodos);
       })
@@ -77,12 +77,11 @@ export default function App() {
         const newTodos = [...todos];
         newTodos.splice(index, 1, data);
         setTodos(newTodos);
+        todos[index].isCompleted = completionStatus.isCompleted;
       })
       .catch((error) => {
         console.error('There was an error!', error);
       });
-
-    todos[index].isCompleted = completionStatus.isCompleted;
 
     /**
      * Find the index of the todo with the matching todoId in the state array.
