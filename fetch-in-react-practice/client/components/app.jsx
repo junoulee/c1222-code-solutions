@@ -6,6 +6,7 @@ import TodoForm from './todo-form';
 
 export default function App() {
   const [todos, setTodos] = useState([]);
+  const [error, setError] = useState();
 
   useEffect(() => {
     /**
@@ -21,6 +22,7 @@ export default function App() {
       })
       .catch((error) => {
         console.error('There was an error!', error);
+        setError(error);
       });
   }, []);
 
@@ -57,6 +59,7 @@ export default function App() {
       })
       .catch((error) => {
         console.error('There was an error!', error);
+        setError(error);
       });
   }
 
@@ -81,6 +84,7 @@ export default function App() {
       })
       .catch((error) => {
         console.error('There was an error!', error);
+        setError(error);
       });
 
     /**
@@ -110,9 +114,10 @@ export default function App() {
     <div className="container">
       <div className="row">
         <div className="col pt-5">
-          <PageTitle text="Todo App" />
-          <TodoForm onSubmit={addTodo} />
-          <TodoList todos={todos} toggleCompleted={toggleCompleted} />
+          {error && <h2 style={{ color: 'red' }}>There was an error: {error.message}</h2>}
+          {!error && <PageTitle text="Todo App" />}
+          {!error && <TodoForm onSubmit={addTodo} />}
+          {!error && <TodoList todos={todos} toggleCompleted={toggleCompleted} />}
         </div>
       </div>
     </div>
