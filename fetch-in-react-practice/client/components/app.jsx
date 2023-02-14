@@ -51,7 +51,7 @@ export default function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        const replica = todos;
+        const replica = [...todos];
         const newTodos = replica.concat(data);
         setTodos(newTodos);
       })
