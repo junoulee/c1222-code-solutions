@@ -53,8 +53,7 @@ export default function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        const replica = todos;
-        const newTodos = replica.concat(data);
+        const newTodos = todos.concat(data);
         setTodos(newTodos);
       })
       .catch((error) => {
@@ -81,7 +80,7 @@ export default function App() {
         const newTodos = [...todos];
         newTodos.splice(index, 1, data);
         setTodos(newTodos);
-        todos[index].isCompleted = completionStatus.isCompleted;
+
       })
       .catch((error) => {
         console.error('There was an error!', error);
