@@ -49,40 +49,36 @@ app.post('/api/auth/sign-in', (req, res, next) => {
   }
 
   /* your code starts here */
-  argon2
-    .hash(password)
-    .then((hashedPassword) => {
 
-      const sql = `
+  const sql = `
   select *
   from "users"
   where "username" = $1
   `;
 
-      const params = [username];
-      db.query(sql, params)
-        .then((result) => {
-          const [user] = result.rows;
-          if (!user) {
-            throw new ClientError(401, 'invalid login');
-          } else {
-            argon2
-              .verify(user.hashedPassword, password)
-              .then((isMatching) => {
-                if (!isMatching) {
-                  throw new ClientError(401, 'invalid login');
-                } else {
-                  const payload = { userId: user.userId, username: user.username };
-                  const signedToken = jwt.sign(payload, process.env.TOKEN_SECRET);
-                  res.status(200).json({ payload, signedToken });
-                }
-              })
-              .catch((err) => next(err));
-          }
-        })
-        .catch((err) => next(err));
+  const params = [username];
+  db.query(sql, params)
+    .then((result) => {
+      const [user] = result.rows;
+      if (!user) {
+        throw new ClientError(401, 'invalid login');
+      } else {
+        argon2
+          .verify(user.hashedPassword, password)
+          .then((isMatching) => {
+            if (!isMatching) {
+              throw new ClientError(401, 'invalid login');
+            } else {
+              const payload = { userId: user.userId, username: user.username };
+              const signedToken = jwt.sign(payload, process.env.TOKEN_SECRET);
+              res.status(200).json({ payload, signedToken });
+            }
+          })
+          .catch((err) => next(err));
+      }
     })
     .catch((err) => next(err));
+
   /**
    * Query the database to find the "userId" and "hashedPassword" for the "username".
    * Then, 😉
