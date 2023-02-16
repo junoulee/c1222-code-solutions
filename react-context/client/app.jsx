@@ -19,7 +19,7 @@ export default function App() {
     const user = token ? jwtDecode(token) : null;
     setUser(user);
     setIsAuthorizing(false);
-  }, [user]);
+  }, []);
 
   function handleSignIn(result) {
     const { user, token } = result;
