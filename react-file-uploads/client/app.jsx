@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 export default function App() {
-  const [caption, setCaption] = useState();
+  const [caption, setCaption] = useState('');
   const fileInputRef = useRef();
 
   function handleSubmit(event) {
