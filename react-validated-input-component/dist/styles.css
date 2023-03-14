@@ -1,0 +1,27 @@
+.pw {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.bottom-text,
+.bottom-text-two {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  font-weight: 600;
+  color: red;
+}
+
+.field {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 8px;
+}
+
+.x {
+  color: red;
+}
+
+.check {
+  color: green;
+}
