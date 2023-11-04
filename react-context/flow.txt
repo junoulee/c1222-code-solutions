@@ -1,0 +1,17 @@
+User can sign up.
+  - On the sign-in page, if the user clicks the 'sign up' button AND provides
+  a username and password, the user will be able to sign-in.
+  - The user must input both username and password.
+  - The password will then be hashed and stored in the database.
+  - If successful, a 201 status message will be sent along with the object containing user information.
+User can sign in.
+  - If the user provides a valid username and password, the user can sign in.
+  - If the username does not exist, a 401 error will be sent.
+  - if the password does not match or is incorrect, a 401 error will be sent.
+  - If the user inputs the correct username and password, a jwt token will be generated.
+User can stay signed in (even if they refresh the page).
+  - If the user refreshes the page, they will still be logged in due to the jwt token that has
+  been generated during sign-in
+User can sign out.
+  - If the user clicks on 'sign-out', the generated token will be deleted and removed,
+  and the user will be re-directed to the sign-in page as a logged out user.
